@@ -1,6 +1,6 @@
 #include<iostream>
 
-void func(int *b)
+void func(int *p)
 {
     int array = sizeof(p);
     int elemento = sizeof(*p);
@@ -12,7 +12,7 @@ int main()
 {
   int a[7];
   func(a);
-  std::cout << "tamanho do array" << sizeof(a) << std::endl;
-  std::cout << "tamanho do array" << sizeof(*a) << std::endl;
+  std::cout << "tamanho do array= " << sizeof(a) << std::endl;
+  std::cout << "tamanho do array= " << sizeof(*a) << std::endl;
   return 0;
 }
