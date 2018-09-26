@@ -66,30 +66,8 @@ public:
         }
     }
 
-    int binaryFind(int searchKey){
 
-        int lowerBound = 0;
-        int upperBound = size -1;
-        int curIn;
 
-        while (true){
-            cout << lowerBound << endl;
-            cout << upperBound << endl;
-            curIn = (lowerBound + upperBound) / 2;
-            if (data[curIn] == searchKey){
-                return curIn;
-            }
-            else if (lowerBound > upperBound){
-                return false;
-            } else{
-                if (data[curIn] < searchKey){
-                    lowerBound = curIn + 1;
-                } else {
-                    upperBound = curIn - 1;
-                }
-            }
-        }
-    }
 
 };
 

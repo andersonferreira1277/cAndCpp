@@ -12,13 +12,13 @@ class StackArray{
 
   public:
     StackArray(int size){
-      
-    }
-    StackArray(){
 
-    }
+    };
+    ~StackArray(){
+
+    };
   //code goes here
-}
+};
 
 int main() {
 
